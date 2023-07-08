@@ -1,0 +1,81 @@
+.video {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.video video {
+  position: relative;
+  border: none;
+  left: 15%;
+  width: 72%;
+  height: 75%;
+}
+
+.fraselogo {
+  position: absolute;
+  color: white;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
+  animation: aparecer 10s forwards;
+}
+
+.fraselogo h1 {
+  position: relative;
+  margin: 0;
+  text-align: center;
+}
+
+.fraselogo p {
+  position: relative;
+  margin: 0;
+
+  text-align: center;
+}
+
+.descripcion {
+  display: flex;
+  position: relative;
+}
+
+.descripcion img {
+  position: relative;
+  left: 10%;
+  width: 20%;
+  height: 20%;
+  filter: grayscale(100%);
+  border-radius: 5%;
+}
+
+.descripcion p {
+  position: relative;
+  top: 10px;
+  left: 15%;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .superior,
+  .inferior {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .superior,
+  .inferior {
+    font-size: 50%;
+  }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0; /* Comenzar con opacidad 0 (texto oculto) */
+  }
+  to {
+    opacity: 1; /* Terminar con opacidad 1 (texto visible) */
+  }
+}
