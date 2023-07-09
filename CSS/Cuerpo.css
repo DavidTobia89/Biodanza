@@ -10,6 +10,7 @@
   left: 15%;
   width: 72%;
   height: 75%;
+  box-shadow: 10px 10px 10px black;
 }
 
 .fraselogo {
@@ -31,7 +32,6 @@
 .fraselogo p {
   position: relative;
   margin: 0;
-
   text-align: center;
 }
 
@@ -47,15 +47,18 @@
   height: 20%;
   filter: grayscale(100%);
   border-radius: 5%;
+  box-shadow: 10px 10px 10px black;
 }
 
 .descripcion p {
   position: relative;
   top: 10px;
   left: 15%;
-
+  color: black;
 }
-
+.descripcion b {
+  color: rgb(248, 167, 4);
+}
 @media screen and (max-width: 768px) {
   .fraselogo,
   .superior,

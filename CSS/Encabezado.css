@@ -1,106 +1,44 @@
 * {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: #272727;
+body {
+    background: linear-gradient(45deg, blue, rgb(0, 106, 255), rgb(255, 255, 255), rgb(0, 106, 255), rgb(0, 42, 255));
     padding-top: 0px;
 }
-header {
-    background-color: #00113eed;
-    display: flex;
-    gap: 15%;
-    top: 0;
-    width:100%;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.headerCompleto{ 
-    width: 100%;
-    height: 140%;
-    border-radius: 2%;
-}
-.logo{
-    height: 110px;
-}
-
-.iconosHeader{
-    display: flex;
-    margin-right: 10%;
-    margin-left: 90%;
-    height: 20%;        
-}
-
-.iconosHeader form{
-    background-color: #00113eed;
-}
-
-.iconosHeader p img{
+header{
     display: flex;
     justify-content: center;
-    opacity: 0.5;
+    align-items: center;
 }
-
-
-.header  ul, ol {
+#navegador{
+    overflow: visible;
+    flex-grow: 1;
+   padding-left: 30%;
+}
+#navegador ul{
+    list-style-type: none;
+    text-align: center;
     
-    list-style:none;
-}
-
-.nav{
-    border-collapse: collapse;
-    border-radius: 1em;
-    overflow: hidden;
-}
-
-.nav > li {
-    float:left;
-    background-color:#000;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 12px;
-}
-
-.nav ul{
-    background-color:#000;
-    color:#fff;
-}
-
-.nav li a {
-    background-color:#000;
-    color:#fff;
-    text-decoration:none;
-    display:block;
-}
-
-.nav li a:hover {
-    background-color:#434343;
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-    min-width:140px;
-}
-
-.nav li:hover > ul {
-    display:block;
-}
-
-.nav li ul li {
-    position:relative;
-}
-
-.nav li ul li ul {
-    right:-140px;
-    top:0px;
-}
-.header {
-    display: flex;
-    justify-content: center;
+ }
+ #navegador li{
+    border-left: 1px solid blue;
+    display: inline;
+   
+   
+ }
+ #navegador li a {
+    padding: 2%;
+    color: white;
+   width: 50%;
     
-}
+    text-decoration: none;
+ }
+ #navegador li a:hover{
+    
+    color: rgb(248, 167, 4);
+ }
