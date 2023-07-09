@@ -1,0 +1,171 @@
+.informacion{
+    height: 150PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion>p:first-child{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+form input{
+    color: black;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    font-family: 'Manrope', sans-serif;
+    
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+}
+.superior{
+    height: 295px;
+    display: flex;
+}
+.inferior{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border: none;
+    width: 33%;
+}
+.btn-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    border-radius: 50px;
+}
+.contenedorDatos{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border: none;
+    width: 23%;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+.contenedorRedes{
+    border: 1px solid white;
+    border: none;
+    width: 43%;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border: none;
+    width: 100%;
+    padding-top: 6px;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+.twitter{
+    border: 1px solid white;
+    border: none;
+    background-color: #333333;
+    border-radius: 9px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.twitter:hover{
+    background-color: #44448f;
+    box-shadow: 0px 0px 10px 5px rgb(30, 65, 160);
+}
+.btn-twitter{
+    width: 45px;
+    height: auto;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 2px;
+}
+.instagram{
+    border: 1px solid white;
+    border: none;
+    background-color: #333333;
+    border-radius: 9px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-instagram{
+    padding-left: 11px;
+    padding-top: 12px;
+    width: 40px;
+    height: auto;
+    justify-content: center;
+}
+.instagram:hover{
+    background-color: #5d3d69;
+    box-shadow: 0px 0px 10px 5px rgb(128, 41, 128);
+}
+
+
+.whatsapp{
+    border: 1px solid white;
+    border: none;
+    background-color: #333333;
+    border-radius: 9px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-whatsapp{
+    padding-left: 15px;
+    padding-top: 14px;
+    width: 40px;
+    height: auto;
+    justify-content: center;
+}
+.whatsapp:hover{
+    background-color: #335c36;
+    box-shadow: 0px 0px 10px 5px rgb(19, 133, 38);
+}
+.contenedorDatos a:link{
+    color: #ccc;
+    text-decoration: none;
+}
+.contenedorDatos a:visited{
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    h1,p {
+      font-size: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+     h1,p {
+      font-size: 50%;
+    }
+  }
+  
