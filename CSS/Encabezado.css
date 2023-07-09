@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(0, 120, 69), rgb(80, 174, 62), rgb(162, 201, 57), rgb(80, 174, 62), rgb(0, 120, 69));
+    padding-top: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloCompania {
+    padding-left: 5%;
+    width: 40%;
+    height: 100%;
+    font-size: 100%;
+  
+}
+
+#tituloCompania h1 {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#navegador {
+    overflow: visible;
+    flex-grow: 1;
+    
+}
+
+#navegador ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+#navegador li {
+    border-left: 1px solid green;
+    display: inline;
+
+
+}
+
+#navegador li a {
+    padding: 2%;
+    color: white;
+    width: 50%;
+
+    text-decoration: none;
+}
+
+#navegador li a:hover {
+
+    color: rgb(248, 167, 4);
+}
+@media screen and (max-width: 900px) {
+    h1,p {
+        font-size: 90%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1,p {
+        font-size: 75%;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    h1,p {
+      font-size: 50%;
+    }
+  }
