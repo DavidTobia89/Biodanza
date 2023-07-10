@@ -1,0 +1,355 @@
+.video {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  transform: translateY(-10%);
+}
+
+.fraselogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.fraselogo h1 {
+  position: relative;
+  width: 70%;
+  left: 10%;
+  color: black;
+  font-size: 4.5em;
+}
+
+.fraselogo h2 {
+  position: relative;
+  width: 70%;
+  left: 10%;
+  color: black;
+  text-align: left;
+  font-size: 2.5em;
+  font-style: italic;
+  quotes: "‘‘" "’’";
+}
+
+.fraselogo h2::before {
+  content: open-quote;
+}
+
+.fraselogo h2::after {
+  content: close-quote;
+}
+
+.video img {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin: 2%;
+  margin-right: 12%;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (max-width: 1100px) {
+  .fraselogo h1 {
+    font-size: 4em;
+  }
+
+  .fraselogo h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .video img {
+    position: relative;
+    width: 475px;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .fraselogo h1 {
+    font-size: 3.5em;
+    left: 5%;
+  }
+
+  .fraselogo h2 {
+    font-size: 1.5em;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .video img {
+
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .fraselogo h1 {
+    font-size: 3em;
+
+  }
+
+  .fraselogo h2 {
+    font-size: 1em;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0%);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fraselogo {
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    text-align: center;
+  }
+
+  .fraselogo h2 {
+    left: 10%;
+  }
+
+  .video img {
+    margin: 0%;
+    order: 1;
+  }
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.fraseEmotiva {
+  display: flex;
+  position: relative;
+  border-top: 3px dashed green;
+  margin-top: 3%;
+  padding-top: 2%;
+  align-items: center;
+}
+
+.fraseEmotiva h1 {
+  position: relative;
+  width: 70%;
+  height: 20%;
+  left: 20%;
+  color: rgb(0, 96, 0);
+  text-align: center;
+}
+
+.fraseEmotiva img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  right: 6%;
+  border-radius: 5%;
+  margin: 5%;
+  box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .comentarios {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .fraseEmotiva {
+    left: 0%;
+    height: 600px;
+  }
+
+  .fraseEmotiva h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+
+  .fraseEmotiva img {
+    display: flex;
+    margin: 2%;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    position: relative;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comentarios {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .fraseEmotiva {
+    height: 600px;
+  }
+
+  .fraseEmotiva h1 {
+    left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+
+  .fraseEmotiva img {
+    display: flex;
+    margin: 2%;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    position: relative;
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .fraseEmotiva h1 {
+
+    font-size: 2.5em;
+  }
+
+  .fraseEmotiva img {
+
+    width: 300px;
+
+  }
+}
+
+.descripcion {
+  display: flex;
+  position: relative;
+  border-top: 3px dashed green;
+  margin-top: 3%;
+  padding-top: 2%;
+  align-items: center;
+}
+
+.descripcionProfe {
+  display: flex;
+  position: relative;
+  border-top: 3px dashed green;
+  margin-top: 2%;
+  padding-top: 2%;
+  align-items: center;
+}
+
+.descripcion h1 {
+  position: relative;
+  width: 60%;
+  height: 20%;
+  left: 20%;
+  color: rgb(0, 96, 0);
+  text-align: center;
+}
+
+.descripcion img {
+  position: relative;
+  width: 270px;
+  height: 20%;
+  filter: grayscale(100%);
+  border-radius: 5%;
+  margin-left: 5%;
+  box-shadow: 10px 10px 10px black;
+}
+
+.descripcionProfe img {
+  position: relative;
+  width: 270px;
+  height: auto;
+  height: auto;
+  filter: grayscale(100%);
+  border-radius: 5%;
+  margin-left: 5%;
+  box-shadow: 10px 10px 10px black;
+}
+
+@media screen and (max-width: 660px) {
+  .descripcion img {
+    position: relative;
+    width: 250px;
+    margin-bottom: 2%;
+  }
+
+  .descripcionProfe img {
+    position: relative;
+    width: 240px;
+    left: 2%;
+  }
+}
+
+.descripcion p,.descripcionProfe p {
+  position: relative;
+  width: 50%;
+  height: 20%;
+  left: 7%;
+  color: black;
+  text-align: center;
+}
+.descripcion,.descripcionProfe b {
+  color: white;
+}
+@media screen and (max-width: 760px) {
+  .descripcion p,.descripcionProfe p {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin-left: 5%;
+    left: 0%;
+    color: black;
+    text-align: center;
+  }
+}
+input {
+  align-items: center;
+  border: 1px ridge white;
+  background-color: rgb(32, 172, 4);
+  margin-top: 3%;
+  padding: 1%;
+  width: 80%;
+  height: 100%;
+}
+
+input:hover {
+  background-color: rgb(80, 174, 62);
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .comentarios {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .comentarios {
+    font-size: 75%;
+  }
+}
