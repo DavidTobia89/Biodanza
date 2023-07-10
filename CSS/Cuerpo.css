@@ -416,3 +416,25 @@ input:hover {
   padding-left: 5%;
   padding-right: 5%;
 }
+@media screen and (max-width: 600px) {
+.descripcionServicios{
+display: flex;
+flex-direction: column;
+margin-top: 5%;
+margin-bottom: 5%;
+height: 450px;
+}
+.descripcionServicios span {
+  font-size: 75px;
+}
+.descripcionServicios1 h3,
+.descripcionServicios2 h3,
+.descripcionServicios3 h3 {
+  font-size: 1.5em;
+ 
+}
+.descripcionServicios p {
+  font-size: 1em;
+ 
+}
+}
