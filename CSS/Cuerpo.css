@@ -303,7 +303,8 @@
   }
 }
 
-.descripcion p,.descripcionProfe p {
+.descripcion p,
+.descripcionProfe p {
   position: relative;
   width: 50%;
   height: 20%;
@@ -311,11 +312,16 @@
   color: black;
   text-align: center;
 }
-.descripcion,.descripcionProfe b {
+
+.descripcion,
+.descripcionProfe b {
   color: white;
 }
+
 @media screen and (max-width: 760px) {
-  .descripcion p,.descripcionProfe p {
+
+  .descripcion p,
+  .descripcionProfe p {
     position: relative;
     width: 100%;
     height: 50%;
@@ -325,6 +331,7 @@
     text-align: center;
   }
 }
+
 input {
   align-items: center;
   border: 1px ridge white;
@@ -352,4 +359,55 @@ input:hover {
   .comentarios {
     font-size: 75%;
   }
+}
+
+.descripcionServicios {
+  display: flex;
+  border-top: 3px dashed green;
+  height: 500px;
+  margin-top: 3%;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.descripcionServicios1,
+.descripcionServicios2,
+.descripcionServicios3 {
+  padding: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.descripcionServicios1 h3,
+.descripcionServicios2 h3,
+.descripcionServicios3 h3 {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+.descripcionServicios span {
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.descripcionServicios p {
+  font-size: 1.5em;
+  padding-top: 3%;
+  color: white;
+  text-align: center;
+}
+.descripcionServicios2 {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.descripcionServicios3 {
+  padding-left: 5%;
+  padding-right: 5%;
 }
