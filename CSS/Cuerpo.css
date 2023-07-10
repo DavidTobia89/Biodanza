@@ -338,12 +338,14 @@ input {
   background-color: rgb(32, 172, 4);
   margin-top: 3%;
   padding: 1%;
-  width: 80%;
+  width: 30%;
   height: 100%;
+  overflow: visible;
 }
 
 input:hover {
   background-color: rgb(80, 174, 62);
+  overflow: visible;
 
 }
 
@@ -358,6 +360,9 @@ input:hover {
 
   .comentarios {
     font-size: 75%;
+  }
+  input{
+    width: 50%;
   }
 }
 
