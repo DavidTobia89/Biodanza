@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, gray, rgb(192,192,192), white, rgb(192,192,192), gray);
+    padding-top: 0px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    padding-left: 15%;
+}
+#navegador {
+    flex-grow: 1;
+    z-index: 1;
+    margin-right: 5%;
+}
+
+#navegador ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+}
+
+#navegador li {
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: none;
+    display: inline;
+}
+
+#navegador li a {
+    color: white;
+    width: 50%;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#navegador li a:hover {
+    color: green;
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    
+    }
+    #navegador ul {
+       width: 20%;
+        display: none;
+        position: absolute;
+       right: 6%;
+    }
+
+    #navegador li {
+        width: 100%;
+        padding: 5%;
+        border: 2px solid black;
+        background-color: rgb(201, 199, 199);
+    }
+    #navegador li a {
+        color: black;
+        font-weight: bold;
+    }
+    .menu-icon {
+       margin-left: 75%;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    #toggle-menu:checked~ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    #navegador ul {
+        right: 4%;
+         display: none;
+         position: absolute;
+     }
+     
+}
+@media screen and (max-width: 580px) {
+
+    #navegador ul {
+        right: 3%;
+         display: none;
+         position: absolute;
+        
+     }
+     #navegador li a {
+        color: black;
+        font-weight: bold;
+        font-size: 0.75em;
+    }
+}
