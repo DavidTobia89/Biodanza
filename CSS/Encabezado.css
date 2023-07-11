@@ -168,6 +168,9 @@ header {
      
         left: 20em;
     }
+    .logo {
+        padding-left: 15%;
+    }
 }
 @media screen and (max-width: 360px) {
     .menu-icon {
@@ -178,10 +181,18 @@ header {
     }
     #toggle-menu:checked~ul {
      
-        left: 17em;
+        left: 20em;
     }
     
     .logo {
         padding-left: 55%;
     }
+}
+@media screen and (max-width: 300px) {
+   
+    #toggle-menu:checked~ul {
+     
+        left: 17em;
+    }
+    
 }
