@@ -17,20 +17,26 @@
 <body>
     <header>
         <div class="logo">
-            <a href="../index.html"> <img id="logo"
+            <a href="index.html"> <img id="logo"
                     src="https://biodanzaburgos.com/wp-content/uploads/2023/04/Logo_Biodanza_Transparente-180x175.png" /></a>
         </div>
 
         <div id="navegador">
             <input type="checkbox" id="toggle-menu">
             <label for="toggle-menu" class="menu-icon">&#9776;</label>
-            <ul>
+            <ul class="menu">
                 <li><a href="../index.html">INICIO</a></li>
-                <li><a href="">SERVICIOS</a></li>
+                <li ><a href="" > SERVICIOS</a>
+                    <ul class="categorias">
+                        <li> <a href="html/EleccionCiencia.html"> Organizaciones </a></li>
+                        <li> <a href="html/EleccionAccion.html"> Formaciones </a></li>
+                        <li> <a href="html/EleccionAventura.html"> Desarrollo </a></li>
+                    </ul>
+                </li>
                 <li><a href="html/EleccionPLAY.html">BIODANZA</a></li>
                 <li><a href="html/EleccionPLAY.html">EVENTOS</a></li>
                 <li><a href="html/EleccionPLAY.html">SOBRE MÍ</a></li>
-                <li><a href="../html/Contacto.html">CONTACTO</a></li>
+                <li><a href="html/Contacto.html">CONTACTO</a></li>
             </ul>
         </div>
     </header>
@@ -91,6 +97,8 @@
             <p>© Copyright 2001-2023 Copyright.es - Todos los Derechos Reservados</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
