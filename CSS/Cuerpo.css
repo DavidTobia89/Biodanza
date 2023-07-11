@@ -401,12 +401,14 @@ input:hover {
   flex-direction: column;
   color: white;
   text-align: center;
+  color: gray;
 }
 .descripcionServicios p {
   font-size: 1.5em;
   padding-top: 3%;
   color: white;
   text-align: center;
+  color: gray;
 }
 .descripcionServicios2 {
   padding-left: 3%;
@@ -419,7 +421,6 @@ input:hover {
 @media screen and (max-width: 600px) {
 .descripcionServicios{
 display: flex;
-flex-direction: column;
 margin-top: 5%;
 margin-bottom: 5%;
 height: 450px;
@@ -430,7 +431,7 @@ height: 450px;
 .descripcionServicios1 h3,
 .descripcionServicios2 h3,
 .descripcionServicios3 h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
  
 }
 .descripcionServicios p {
