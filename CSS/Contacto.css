@@ -1,0 +1,128 @@
+.contacto {
+    display: flex;
+    max-width: 100%;
+}
+
+.contacto img {
+    width: 600px;
+}
+
+.fraseContacto {
+    margin-left: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fraseContacto h1 {
+    padding: 5%;
+    width: 100%;
+    color: #000;
+}
+
+.fraseContacto h2 {
+    padding: 3%;
+    width: 100%;
+    color: #171717;
+}
+
+.fraseContacto h3 {
+    padding: 2%;
+    width: 100%;
+    color: #343434;
+}
+
+.fraseContacto span {
+    color: gray;
+}
+
+#logoContacto {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .fraseContacto {
+        margin-left: 3%;
+    }
+
+    .contacto img {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .fraseContacto {
+        margin-left: 0%;
+    }
+    .contacto img {
+        width: 400px;
+    }
+    .fraseContacto h1 {
+        font-size: 1.2em;
+    }
+    
+    .fraseContacto h2 {
+        font-size: 1em;
+    }
+    
+    .fraseContacto h3 {
+        font-size: 0.8em;
+    }
+    #logoContacto {
+        width: 150px;
+        height: 150px;
+       
+    }
+}
+@media screen and (max-width: 700px) {
+    .contacto img {
+        width: 300px;
+    }
+    .fraseContacto h1 {
+        font-size: 1em;
+    }
+    
+    .fraseContacto h2 {
+        font-size: 0.8em;
+    }
+    
+    .fraseContacto h3 {
+        font-size: 0.6em;
+    }
+    .fraseContacto span {
+        font-size: 2em;
+    }
+    #logoContacto {
+        width: 125px;
+        height: 125px;
+       
+    }
+}
+@media screen and (max-width: 500px) {
+    .contacto img {
+        width: 200px;
+    }
+    #logoContacto {
+        width: 100px;
+        height: 100px;
+       
+    }
+}
+@media screen and (max-width: 300px) {
+  
+    .descripcionServicios1{
+      padding-left: 0%;
+      padding-right: 2%;
+    }
+  
+
+    .contacto img {
+        width: 100px;
+      }
+  }
