@@ -447,8 +447,6 @@ input:hover {
 .descripcionServicios2,
 .descripcionServicios3 {
   padding: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
   display: flex;
   flex-direction: column;
   
