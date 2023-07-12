@@ -26,7 +26,7 @@ header {
     width: 100%;
     min-width: 300px;
     display: flex;
-   
+    z-index: 2;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -63,9 +63,10 @@ header {
     color: #e9e9e9;
 }
 
-.contenedor-menu .menu .activado>a {
+#navegador .menu .activado>a {
     background-color: #1a95d5;
     color: #fff;
+    z-index: 2;
 }
 
 #toggle-menu {

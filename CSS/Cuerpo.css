@@ -155,6 +155,7 @@
 
 .fraseEmotiva {
   display: flex;
+  flex-direction: column;
   position: relative;
   border-top: 3px dashed green;
   margin-top: 3%;
@@ -166,16 +167,28 @@
   position: relative;
   width: 70%;
   height: 20%;
-  left: 20%;
   color: rgb(0, 96, 0);
   text-align: center;
+  font-size: 3em;
 }
-
-.fraseEmotiva img {
+.fraseEmotiva .definicionBiodanza{
+  display: flex;
   position: relative;
-  width: 100%;
+  border: none;
+  align-items: center;
+
+}
+.fraseEmotiva .definicionBiodanza .parrafoBiodanza p{
+  display: flex;
+ color: black;
+ text-align: center;
+ font-size: 1.5em;
+ padding: 5%;
+}
+.fraseEmotiva .definicionBiodanza img {
+  position: relative;
+  width: 40%;
   height: auto;
-  right: 6%;
   border-radius: 5%;
   margin: 5%;
   box-shadow: 10px 10px 10px black;
@@ -191,73 +204,97 @@
     left: 0%;
     height: 600px;
   }
-
-  .fraseEmotiva h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
+  .fraseEmotiva .definicionBiodanza .parrafoBiodanza p{
+   font-size: 1.25em;
   }
-
-  .fraseEmotiva img {
+  .fraseEmotiva .definicionBiodanza img {
     display: flex;
     margin: 2%;
-    margin-top: 10%;
-    justify-content: center;
-    align-items: center;
-    width: 375px;
+    margin-top: 5%;
     position: relative;
-    left: 2%;
   }
 }
-
+@media screen and (max-width: 950px){
+  .fraseEmotiva h1{
+    font-size: 2.5em;
+  
+}
+}
 @media screen and (max-width: 768px) {
   .comentarios {
     margin-left: 0%;
     width: 100%;
   }
-
   .fraseEmotiva {
-    height: 600px;
+    height: 500px;
   }
-
   .fraseEmotiva h1 {
     left: 0%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
   }
-
-  .fraseEmotiva img {
+  .fraseEmotiva .definicionBiodanza .parrafoBiodanza {
+    width: 50%;
+   }
+  .fraseEmotiva .definicionBiodanza img {
     display: flex;
     margin: 2%;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: center;
     align-items: center;
-    width: 375px;
+    width: 300px;
     position: relative;
     left: 2%;
   }
 }
-
-@media screen and (max-width: 350px) {
-
-  .fraseEmotiva h1 {
-
-    font-size: 2.5em;
-  }
-
-  .fraseEmotiva img {
-
-    width: 300px;
-
+@media screen and (max-width: 680px) {
+  .fraseEmotiva .definicionBiodanza img {
+ 
+    width: 250px;
   }
 }
-
+@media screen and (max-width: 595px) {
+.fraseEmotiva .definicionBiodanza {
+ margin-top: 5%;
+ height: 300px;
+ }
+ .fraseEmotiva .definicionBiodanza .parrafoBiodanza {
+  width: 40%;
+ }
+ .fraseEmotiva .definicionBiodanza img {
+  width: 250px;
+}
+}
+@media screen and (max-width: 490px) {
+  .fraseEmotiva .definicionBiodanza img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .fraseEmotiva h1 {
+    font-size: 2em;
+  }.fraseEmotiva .definicionBiodanza .parrafoBiodanza p{
+    font-size: 1.25em;
+   }
+  .fraseEmotiva .definicionBiodanza img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .fraseEmotiva  {
+    height: 400px;}
+  .fraseEmotiva h1 {
+    font-size: 1.5em;}
+    .fraseEmotiva .definicionBiodanza {
+      margin-top: 0%;
+      height: 200px;
+      }
+  .fraseEmotiva .definicionBiodanza .parrafoBiodanza p{
+    font-size: 0.8em;
+   }
+   .fraseEmotiva .definicionBiodanza img {
+    width: 100px;
+  }
+}
 .descripcion {
   display: flex;
   position: relative;
