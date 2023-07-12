@@ -1,0 +1,88 @@
+.conoceme {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    line-height: 200%
+}
+
+.conoceme img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.fraseConoceme h1,
+.fraseMision h1,
+.fraseActualidad h1 {
+    text-align: center;
+    margin-top: 2%;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+}
+
+.fraseConoceme p,
+.fraseMision p {
+    text-align: center;
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 5%;
+    width: 100%;
+    color: #000;
+}
+
+.fraseActualidad {
+    width: 100%;
+}
+
+.fraseActualidad ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 2%;
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .fraseActualidad  ul li{
+margin-left: 5%;
+        width: 95%;
+    } 
+}
+@media screen and (max-width: 450px) {
+
+    .conoceme {
+        line-height: 150%;
+    }
+
+    .fraseConoceme,
+    .fraseMision, .fraseActualidad {
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    .fraseConoceme h1,
+    .fraseMision h1,
+    .fraseActualidad h1{
+        font-size: 1.5em;
+    }
+    .fraseConoceme p,
+    .fraseMision p {
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 2%;
+        font-size: 1em;
+    }
+    .fraseActualidad ul li {
+        margin-top: 3%;
+        font-size: 1em;
+    }
+    .conoceme img {
+        width: 200px;
+    }
+}
