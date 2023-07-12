@@ -2,26 +2,18 @@ $(document).ready(function(){
   $('.menu li:has(ul)').click(function(e){
     e.preventDefault();
     
-    if ($(this).hasClass('acticado')){
+    if ($(this).hasClass('activado')){
 
-    $(this).removeClass('acticado');
+    $(this).removeClass('activado');
     $(this).children('ul').slideUp();
    }
     else  {
       $('.menu li ul').slideUp();
-      $('.menu li').removeClass('acticado')
-      $(this).addClass('acticado');
+      $('.menu li').removeClass('activado')
+      $(this).addClass('activado');
       $(this).children('ul').slideDown();
     }
   });
-  $('.menu-icon').click(function(){
-    $('#navegador menu').slideToggle();
-  });
-  $(window).resize(function(){
-    if ($(document).width() > 780) {
-      $('#navegador menu').css({'display':'block'});
-  };
-  
-  })
+
 
 });
