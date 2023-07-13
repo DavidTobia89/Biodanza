@@ -172,5 +172,6 @@ footer{
     display: flex;
     align-items: center;
     background-color:white;
-    border-radius: 50%;
+   
+    filter: invert(1);
  }
