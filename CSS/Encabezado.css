@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -34,7 +34,7 @@ header {
     display: flex;
     position: relative;
     width: 100%;
-    left: 30%;
+    margin-left: 30%;
    font-size: 0.8em;
 }
 #navegador ul {
